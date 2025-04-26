@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Showcase</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .movie {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .movie:hover {
+            transform: scale(1.05);
+        }
+        .movie img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #eee;
+        }
+        .movie-info {
+            padding: 15px;
+        }
+        .movie-info h3 {
+            margin: 0 0 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .movie-info p {
+            color: #777;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Movies Showcase</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="#">Top Rated</a>
+    <a href="#">Genres</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <!-- Movie 1 -->
+    <div class="movie">
+        <img src="movie1.jpg" alt="The Shawshank Redemption">
+        <div class="movie-info">
+            <h3>The Shawshank Redemption (1994)</h3>
+            <p>Genre: Drama</p>
+            <p>A man wrongly convicted of murder is sentenced to life in prison, where he forms a close friendship with a fellow inmate.</p>
+        </div>
+    </div>
+
+    <!-- Movie 2 -->
+    <div class="movie">
+        <img src="movie2.jpg" alt="Inception">
+        <div class="movie-info">
+            <h3>Inception (2010)</h3>
+            <p>Genre: Science Fiction</p>
+            <p>A skilled thief is given a chance to have his criminal record erased in exchange for implanting an idea into a target's subconscious.</p>
+        </div>
+    </div>
+
+    <!-- Movie 3 -->
+    <div class="movie">
+        <img src="movie3.jpg" alt="The Dark Knight">
+        <div class="movie-info">
+            <h3>The Dark Knight (2008)</h3>
+            <p>Genre: Action, Crime</p>
+            <p>The Joker emerges from his criminal past to wreak havoc on Gotham City, forcing Batman to face his greatest challenge yet.</p>
+        </div>
+    </div>
+
+    <!-- Movie 4 -->
+    <div class="movie">
+        <img src="movie4.jpg" alt="Forrest Gump">
+        <div class="movie-info">
+            <h3>Forrest Gump (1994)</h3>
+            <p>Genre: Drama, Comedy</p>
+            <p>A slow-witted but kind-hearted man witnesses and unwittingly influences several historical events in the 20th century USA.</p>
+        </div>
+    </div>
+
+    <!-- Movie 5 -->
+    <div class="movie">
+        <img src="movie5.jpg" alt="Avatar">
+        <div class="movie-info">
+            <h3>Avatar (2009)</h3>
+            <p>Genre: Science Fiction, Action</p>
+            <p>A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.</p>
+        </div>
+    </div>
+
+    <!-- Movie 6 -->
+    <div class="movie">
+        <img src="movie6.jpg" alt="Interstellar">
+        <div class="movie-info">
+            <h3>Interstellar (2014)</h3>
+            <p>Genre: Science Fiction, Drama</p>
+            <p>A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Movies Showcase | All rights reserved</p>
+</footer>
+
+</body>
+</html>
